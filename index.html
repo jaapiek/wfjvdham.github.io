@@ -29,10 +29,30 @@
         p .warning {
             border: 5px solid green;
         }
+
+        #res {
+            color:green;
+        }
+        
+        @media(min-width:900px){
+            #res { 
+                color:red;
+            }
+        } 
             
         </style>
+
+        <script>
+            function countRabbits() {
+                for(let i=1; i<=3; i++) {
+                    alert("Rabbit number " + i);
+                }
+            }
+        </script>
     </head>
     <body>
+
+    <p id = "res">responsive</p>
 
     <h1>All about rabbits!</h1>
     
@@ -56,6 +76,8 @@ and bopping them on the head!</p>
     <p class="warning">Warning!</p>
 
     <p>test <span class="warning">also warning</span></p>
+
+    <input type="button" onclick="countRabbits()" value="Count rabbits!">
 
     </body>
 </html>
